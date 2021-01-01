@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+
+
+/* 共通 */
+body{
+    background-color:#F0D759;
+}
+.red{
+    color:#e60412;
+}
+.blue{
+    color:#56a3da;
+}
+.orange{
+    color:#e94908;
+}
+.green{
+    color:#5ca73a;
+}
+p{
+    font-size:1.5vw;
+}
+.pen{
+    background:linear-gradient(transparent 0,yellow 0)
+}
+
+/* メインとナビ */
+.main img{
+    position:relative;
+    width:100vw;
+    height:100vh;
+}
+
+.main h1{
+    position:absolute;
+    top:84%;
+    left:60%;
+    font-size:2vw;
+    color:white;
+}
+
+.white_board_nav{
+    width:50vw;
+    background-color:white;
+    border:5px solid #5ca73a;
+    margin:3% auto;
+    padding:1% 0 2% 0;
+}
+
+.white_board_nav h3{
+    font-size:3vw;
+    margin:0 0 5% 30%;
+    text-decoration:underline;
+}
+
+.white_board_nav li{
+    font-size:2vw;
+    margin:2% 0 0 2%;
+}
+
+
+
+/* ハラハラ爆弾ゲーム */
+
+.red_board{
+    width:90vw;
+    background-color:#e60412;
+    border-left:1vw solid white;
+    margin:2% auto;
+}
+
+.red_board h2{
+    margin:0 0 0 3%;
+    font-size:2vw;
+    color:white;
+}
+
+
+.white_board{
+    width:90vw;
+    background-color:white;
+    border:5px solid #5ca73a;
+    margin:3% auto;
+    padding:1% 0 1% 0;
+}
+
+.white_board h3{
+    font-size:2vw;
+    margin:0 0 3% 0%;
+    text-align:center;
+    text-decoration:underline;
+}
+
+.game_img{
+    display:block;
+    margin:0 auto 5% auto;
+    width:60vw;
+    border:1px solid black;
+}
+
+.explanation{
+    font-size:1.6vw;
+    margin:0 0 0 20%;
+}
+
+.ok{
+    font-size:1.5vw;
+    margin:2% 0 0 60%;
+}
+
+
+
+/* 要素を追加する方法 */
+.strong_board{
+    width:60vw;
+    background-color:white;
+    border:5px solid #5ca73a;
+    margin:3% auto;
+    padding:1% 0 1% 0;
+}
+
+
+.strong_board h4{
+    font-size:2vw;
+    color:red;
+    margin:0 0 0% 2%;
+}
+
+.kome{
+    font-size:1.2vw;
+    margin:-2% 0 0 20%;
+}
+
+.title_box{
+    width:8vw;
+    background-color:#5ca73a;
+    color:white;
+    margin:0 0 0 1vw;
+}
+
+.title_box h5{
+    font-size:1.5vw;
+    margin:0 0 0 10%;
+}
+
+.white_board_code{
+    width:96vw;
+    background-color:white;
+    border:5px solid #5ca73a;
+    margin:0vw auto;
+    padding:1% 0 10% 0;
+}
+
+.white_board_code p{
+    font-size:2vw;
+    color:black;
+    margin:1% 0 1% 2%;
+}
+.white_board_code h6{
+    font-size:1.5vw;
+    color:black;
+    margin:3% 0 0 0%;
+}
+
+.comment{
+    font-size:1.4vw;
+}
+
+#option_title{
+    color:#56a3da;
+    font-size:1.5vw;
+    margin:2% 0 0 2%;;
+}
+.option{
+    width:40vw;
+    border:3px solid #56a3da;
+    margin:0 0 0 2%;
+}
+
+#target{
+    margin:0 auto;
+    width:60vw;
+    height:84vh;
+    background-color:white;
+}
+#target p{
+    text-align:center;
+    font-size:5vw;
+    margin:3% 0 0 0;
+    padding:20% 0 0 0;
+}
+
+#button{
+    width:12vw;
+    font-size:2vw;
+    background-color:#dcdcdc;
+    margin:2% 0 0 65vw;
+    text-align:center;
+    padding:0.6vw;
+    border:3px solid black;
+    box-shadow:5px 5px 0 black;
+}
+
+.margin{
+    line-height: 200%;
+    margin:0 0 0 2%;
+}
+
+#test{
+    width:48vw;
+    height:84vh;
+    display:block;
+    margin:2% auto;
+}

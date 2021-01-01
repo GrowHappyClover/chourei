@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>朝礼</title>
+    <link href="css/chourei.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+
+
+
+    <!-- メインビジュアルとナビ -->
+    <section>
+        <div class="main">
+            <img src="img/2021main.png">
+            <h1>あけましておめでとうございます<br>今年もどうぞよろしくお願いします</h1>
+        </div>
+        <div class="white_board_nav">
+            <h3>本日のメニュー</h3>
+            <ol>
+                <li>ハラハラ爆弾ゲーム</li>
+                <li>javascriptでhtmlに要素を追加する方法</li>
+                <li>javascriptでアニメーションする方法</li>
+            </ol>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- ハラハラ爆弾ゲーム -->
+    <section class="bomb">
+        <div class="red_board">
+            <h2>ハラハラ爆弾ゲーム</h2>
+        </div>
+
+        <div class="white_board">
+            <h3>ルール説明</h3>
+            <img src="img/game_img.png" alt="ゲーム画面" class="game_img">
+            <p class="explanation">箱の中に爆弾が入っている。<br>
+                クリックして，<span class="red">爆弾をひいた人</span>は大当たり！<br>
+                記念に，みんなの前で<span class="red">新年の抱負を発表</span>してもらいます。<br>
+            </p>
+            <p class="ok">OK?</p>
+        </div>
+    </section>
+
+
+
+
+    <section id="commentary">
+        <div class="red_board">
+            <h2>要素を追加する方法</h2>
+        </div>
+
+        <div class="strong_board">
+            <h4>let　◇◇◇＝document.createElement("タグ")</h4>
+        </div>
+        <div class="strong_board">
+            <h4>〇〇〇.appendChild("◇◇◇")</h4>
+        </div>
+        <p class="kome">※↑追加したい場所（document.getElementで取得したidやクラス）</p>
+
+        <div class="title_box">
+            <h5>コード例</h5>
+            <div class="white_board_code">
+                <h6>【タグ作成準備】</h6>
+                <p>
+                    let <span class="blue">test_img</span>=<span
+                        class="red">document.createElement("img")</span>;　　　<span
+                        class="comment">/*「test_img」にimgタグを持たせます*/</span><br>
+                    <span class="blue">test_img.src</span>="img/test.png";　　　　　　　　　　　　<span
+                        class="comment">/*画像を設定します*/。</span>
+                </p>
+
+                <p id="option_title">オプション(プロパティーを追加できます。)
+                </p>
+                <div class="option">
+                    <p>test_img.alt="テストイメージ"<br>
+                        test_img.width=200;　　　※200px<br>
+                        test_img.height=200;　　　※200px<br>
+                        test_img.id="test"<br>
+                    </p>
+                </div>
+
+                <h6>【指定した場所に要素を追加】</h6>
+                <p>let <span class="green">target_area</span>=document.getElementById("target")<br>
+                    <span class="green">target_area</span><span class="red">.appendChild</span>(<span class="blue">
+                        test_img</span>)
+                </p>
+            </div>
+        </div>
+
+
+        <div id="target">
+            <p id="remove">id=target</p>
+        </div>
+        <div id="button">クリック</div>
+        <div class="white_board">
+            <h3>補足</h3>
+            <p class="margin"><span class="red">「appendChild」は指定した場所（親要素）</span>の<span
+                    class="pen">最後の子要素として追加</span>される。<br>
+                ちなみに<span class="red">「insertBefore」</span>を使えば，<span class="pen">指定した場所（親要素）の最初や二番目や<br>
+                    いろいろな場所で追加</span>できるらしいです。こっちの方が便利そう。<br>※参考サイトのリンクをslackにあげときます。</p>
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+    <script src="js/chourei.js"></script>
+</body>
+
+</html>
